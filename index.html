@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <script src="js/jquery.js"></script>
+    <script src="js/anime.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
+    <div class="area">FAKEMASSEGES</div>
+
+    <section id="body_main">
+
+        <div id="all_of_texts">
+            <textarea id="text1"></textarea>
+            <div id="app"></div>
+            <textarea id="text2"></textarea>
+        </div>
+    </section>
+
+    <!-- Footer -->
+	<section id="footer">
+		<div class="footer container">
+			<div class="brand">
+				<h1><span>B</span>ootamp_<span>MIS</span>i<span>S</span></h1>
+			</div>
+			<img class="misis" src="https://www.4dk.ru/files/88723/misis-logo.png" alt="">
+			<p class="mail">bootamp_misis@gmail.com</p>
+			<div class="social-icon">
+				<div class="social-item">
+					<a href="https://www.facebook.com/ars.iv.524/"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+				</div>
+				<div class="social-item">
+					<a href="https://www.instagram.com/_.kurtka_bein._/?hl=ru"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+				</div>
+				<div class="social-item">
+					<a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+				</div>
+			</div>
+			<p>Copyright © 2021 Bootamp_MISiS. All rights reserved</p>
+		</div>
+	</section>
+	<!-- End Footer -->
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
